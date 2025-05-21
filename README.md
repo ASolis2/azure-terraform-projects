@@ -1,21 +1,21 @@
-# Project 22 – Azure PostgreSQL Basic (Simulated Plan)
 
-## Purpose
-Simulate a basic PostgreSQL server deployment using Terraform with default settings. No real resources are provisioned — this validates logic and structure offline in WSL.
+Project 23 – Azure PostgreSQL with Public Networking (Simulated Plan)
 
-## What It Includes
-- Terraform files to provision:
-  - Azure Resource Group
-  - Azure PostgreSQL Server (Basic Tier)
-- Variables for customization
-- Output for PostgreSQL FQDN
+Purpose:
+Simulate a PostgreSQL server deployment on Azure using Terraform, including public access via firewall rule.
+This is a local simulation only — no resources are provisioned.
 
-## Terraform Workflow
-```bash
+What It Includes:
+- Azure Resource Group
+- Azure PostgreSQL Server (Basic Tier)
+- PostgreSQL Firewall Rule to allow public access from 0.0.0.0/0
+- Terraform outputs: PostgreSQL FQDN
+
+Terraform Workflow:
 terraform init
 terraform validate
 terraform plan
-```
 
-## Screenshot
-![Plan Output](./screenshots/postgresql-plan-output.png)
+Screenshot:
+![Plan Output](./screenshots/postgresql-public-plan-output.png)
+

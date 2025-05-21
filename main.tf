@@ -1,3 +1,4 @@
+
 resource "azurerm_resource_group" "postgresql_rg" {
   name     = var.resource_group_name
   location = var.location
@@ -22,7 +23,16 @@ resource "azurerm_postgresql_server" "postgresql" {
 
   tags = {
     environment = "dev"
-    project     = "basic-postgresql"
+    project     = "public-postgresql"
   }
+}
+
+resource "azurerm_postgresql_firewall_rule" "allow_public_access" {
+  name                = "AllowPublicAccess"
+  resource_group_name = azurerm_postgresql_server.postgresql.resource_group_name
+  server_name         = azurerm_postgresql_server.postgresql.name
+
+  start_ip_address = "0.0.0.0"
+  end_ip_address   = "255.255.255.255"
 }
 
