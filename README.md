@@ -1,15 +1,14 @@
 
-Project 23 – Azure PostgreSQL with Public Networking (Simulated Plan)
+Project 24 – Azure PostgreSQL with Private Networking (Simulated Plan)
 
 Purpose:
-Simulate a PostgreSQL server deployment on Azure using Terraform, including public access via firewall rule.
-This is a local simulation only — no resources are provisioned.
+Simulate a PostgreSQL server deployment using Terraform where public network access is disabled. This represents a common production security posture, limiting access to internal VNETs or trusted environments.
 
 What It Includes:
 - Azure Resource Group
 - Azure PostgreSQL Server (Basic Tier)
-- PostgreSQL Firewall Rule to allow public access from 0.0.0.0/0
-- Terraform outputs: PostgreSQL FQDN
+- Public network access explicitly disabled
+- Terraform outputs: PostgreSQL FQDN (not accessible without private networking)
 
 Terraform Workflow:
 terraform init
@@ -17,5 +16,5 @@ terraform validate
 terraform plan
 
 Screenshot:
-![Plan Output](./screenshots/postgresql-public-plan-output.png)
+![Plan Output](./screenshots/postgresql-private-plan-output.png)
 

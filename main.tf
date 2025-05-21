@@ -18,21 +18,12 @@ resource "azurerm_postgresql_server" "postgresql" {
   backup_retention_days        = 7
   geo_redundant_backup_enabled = false
   auto_grow_enabled            = true
-  public_network_access_enabled = true
+  public_network_access_enabled = false
   ssl_enforcement_enabled      = true
 
   tags = {
     environment = "dev"
-    project     = "public-postgresql"
+    project     = "private-postgresql"
   }
-}
-
-resource "azurerm_postgresql_firewall_rule" "allow_public_access" {
-  name                = "AllowPublicAccess"
-  resource_group_name = azurerm_postgresql_server.postgresql.resource_group_name
-  server_name         = azurerm_postgresql_server.postgresql.name
-
-  start_ip_address = "0.0.0.0"
-  end_ip_address   = "255.255.255.255"
 }
 
