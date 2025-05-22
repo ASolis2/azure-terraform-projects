@@ -18,21 +18,21 @@ Each project folder includes:
 
 ---
 
-## 🚀 Projects
+## 🗂 Projects
 
-- [Project 22 – PostgreSQL Basic](./project-22)  
+- [Project 22 – PostgreSQL Basic](https://github.com/ASolis2/azure-terraform-projects/blob/project-22/README.md)  
   Deploys a basic PostgreSQL Server in Azure (simulated plan)
 
-- [Project 23 – PostgreSQL Public Access](./project-23)  
+- [Project 23 – PostgreSQL Public Access](https://github.com/ASolis2/azure-terraform-projects/blob/project-23/README.md)  
   Adds public network firewall rules to PostgreSQL (simulated plan)
 
-- [Project 24 – PostgreSQL Private Networking](./project-24)  
+- [Project 24 – PostgreSQL Private Networking](https://github.com/ASolis2/azure-terraform-projects/blob/project-24/README.md)  
   Deploys PostgreSQL server into a private subnet (no public IP)
 
-- [Project 25 – PostgreSQL Geo-Redundant Backup](./project-25)  
+- [Project 25 – PostgreSQL Geo-Redundant Backup](https://github.com/ASolis2/azure-terraform-projects/blob/project-25/README.md)  
   Simulates geo-redundant storage for backups (simulated only)
 
-- [Project 26 – PostgreSQL Advanced Security](./project-26)  
+- [Project 26 – PostgreSQL Advanced Security](https://github.com/ASolis2/azure-terraform-projects/blob/project-26/README.md)  
   Private-only PostgreSQL server with VNet + firewall rule (simulated)
 
 ---
