@@ -1,16 +1,14 @@
 
 # Azure Terraform Projects
 
-This repository showcases real-world Terraform infrastructure projects deployed in a simulated and live Azure environment using WSL and CLI tools. Each project is organized with proper structure, tested using `terraform plan`, and stored in separate GitHub branches for clarity and versioning.
+This repository contains a series of Terraform projects simulating real-world deployments in Azure. Each project is organized into its own folder and GitHub branch, following best practices for DevOps infrastructure as code.
 
-## 🔧 Tools Used
-- Terraform CLI (v1.12.1)
-- Azure Resource Manager (simulated locally)
-- WSL + Ubuntu Terminal
-- GitHub CLI + Git Version Control
+---
 
 ## 📁 Project Structure
-Each project is structured into:
+
+Each project folder includes:
+
 - `main.tf` – core infrastructure logic
 - `variables.tf` – configurable inputs
 - `outputs.tf` – key results returned from resources
@@ -18,26 +16,36 @@ Each project is structured into:
 - `README.txt` – explanation of what each project does
 - `screenshots/` – embedded Terraform plan results
 
+---
+
 ## 🚀 Projects
 
-- [Project 22 – PostgreSQL Basic](https://github.com/ASolis2/azure-terraform-projects/tree/project-22)  
+- [Project 22 – PostgreSQL Basic](./project-22)  
   Deploys a basic PostgreSQL Server in Azure (simulated plan)
 
-- [Project 23 – PostgreSQL Public Access](https://github.com/ASolis2/azure-terraform-projects/tree/project-23)  
+- [Project 23 – PostgreSQL Public Access](./project-23)  
   Adds public network firewall rules to PostgreSQL (simulated plan)
 
-## 📌 Goals
+- [Project 24 – PostgreSQL Private Networking](./project-24)  
+  Deploys PostgreSQL server into a private subnet (no public IP)
+
+- [Project 25 – PostgreSQL Geo-Redundant Backup](./project-25)  
+  Simulates geo-redundant storage for backups (simulated only)
+
+- [Project 26 – PostgreSQL Advanced Security](./project-26)  
+  Private-only PostgreSQL server with VNet + firewall rule (simulated)
+
+---
+
+## 🎯 Goals
+
 - Demonstrate clean Terraform structure and branching
 - Simulate real-world Azure deployments locally for learning and practice
 - Build a strong DevOps/Cloud portfolio with public GitHub documentation
 
-## 🧠 Next Steps
-Coming soon:
-- Project 24 – Private Networking PostgreSQL
-- Project 25 – Geo-Redundant PostgreSQL
-- Project 26 – PostgreSQL Advanced Security
-
 ---
 
-🧠 Built and documented with hands-on learning, best practices, and job-readiness in mind.
+## 🧠 Built With Learning & Job Readiness in Mind
+
+Each project is crafted for clarity, documentation, and to showcase infrastructure knowledge to future employers or recruiters.
 
