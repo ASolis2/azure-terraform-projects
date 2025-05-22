@@ -1,10 +1,33 @@
 
-# Azure Terraform Projects
+# Project 26: Azure PostgreSQL with Advanced Security (Simulated)
 
-This repository contains a series of Terraform projects simulating real-world deployments in Azure. Each project is organized into its own folder and GitHub branch, following best practices for DevOps infrastructure as code.
+This project simulates deploying a secure PostgreSQL Flexible Server in Azure using Terraform. It focuses on advanced security practices by restricting public access and using VNet integration.
+
+## Features
+
+- 🚫 Public network access disabled
+- 🌐 Integrated with a private Virtual Network and Subnet
+- 🔥 Firewall rule allowing access from a single IP
+- 📦 Fully simulated with `terraform plan` only
+- 🧾 Outputs server name and network mode
+
+## Terraform Resources
+
+- `azurerm_postgresql_flexible_server`
+- `azurerm_virtual_network`
+- `azurerm_subnet`
+- `azurerm_postgresql_flexible_server_firewall_rule`
+- `azurerm_resource_group`
+
+## Screenshot
+
+Below is the output from `terraform plan`:
+
+![Terraform Plan Output](./screenshots/terraform-plan.png)
 
 ---
 
+<<<<<<< HEAD
 ## 📁 Project Structure
 
 Each project folder includes:
@@ -48,4 +71,7 @@ Each project folder includes:
 ## 🧠 Built With Learning & Job Readiness in Mind
 
 Each project is crafted for clarity, documentation, and to showcase infrastructure knowledge to future employers or recruiters.
+=======
+*Built and documented with job-readiness and secure deployment practices in mind.*
+>>>>>>> project-26
 
