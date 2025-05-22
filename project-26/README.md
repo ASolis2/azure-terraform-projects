@@ -29,7 +29,7 @@ This project simulates deploying a secure PostgreSQL Flexible Server in Azure us
 
 Below is the output from `terraform plan`:
 
-![Terraform Plan Output](project-26/screenshots/terraform-plan.png)
+![Terraform Plan Output](./screenshots/terraform-plan.png)
 
 ---
 
