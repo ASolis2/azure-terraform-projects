@@ -19,14 +19,6 @@ Projects include a variety of Terraform resources such as:
 
 ---
 
-## Screenshot
-
-Below is the output from `terraform plan`:
-
-![Terraform Plan Output](./screenshots/terraform-plan.png)
-
----
-
 ## Project Structure
 
 Each project folder includes:
@@ -42,12 +34,12 @@ Each project folder includes:
 
 ## Projects
 
-- [Project 22 – PostgreSQL Basic](./project-22)
-- [Project 23 – PostgreSQL Public Access](./project-23)
-- [Project 24 – PostgreSQL Private Access](./project-24)
-- [Project 25 – PostgreSQL Geo-Redundant (Simulated)](./project-25)
-- [Project 26 – PostgreSQL Advanced Security](./project-26)
-- [Project 27 – Azure Load Balancer with Multiple VMs](./project-27-loadbalancer-multiple-vms)
+- [Project 22 – PostgreSQL Basic](https://github.com/ASolis2/azure-terraform-projects/tree/project-22)
+- [Project 23 – PostgreSQL Public Access](https://github.com/ASolis2/azure-terraform-projects/tree/project-23)
+- [Project 24 – PostgreSQL Private Access](https://github.com/ASolis2/azure-terraform-projects/tree/project-24)
+- [Project 25 – PostgreSQL Geo-Redundant (Simulated)](https://github.com/ASolis2/azure-terraform-projects/tree/project-25)
+- [Project 26 – PostgreSQL Advanced Security](https://github.com/ASolis2/azure-terraform-projects/tree/project-26)
+- [Project 27 – Azure Load Balancer with Multiple VMs](https://github.com/ASolis2/azure-terraform-projects/tree/project-27-loadbalancer-multiple-vms)
 
 ---
 
