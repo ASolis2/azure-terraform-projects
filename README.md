@@ -1,26 +1,20 @@
+# Azure Terraform Projects Portfolio
 
-# Project 26: Azure PostgreSQL with Advanced Security (Simulated)
-
-This project simulates deploying a secure PostgreSQL Flexible Server in Azure using Terraform. It focuses on advanced security practices by restricting public access and using VNet integration.
-
----
-
-## Features
-
-- 🚫 Public network access disabled
-- 🌐 Integrated with a private Virtual Network and Subnet
-- 🔥 Firewall rule allowing access from a single IP
-- 🧪 Fully simulated with `terraform plan` only
-- 📤 Outputs server name and network mode
+Welcome to my Azure + Terraform DevOps project portfolio. Each project here simulates real-world infrastructure deployments using Terraform on Azure, designed to demonstrate my proficiency with cloud, infrastructure-as-code, and GitHub-based documentation.
 
 ---
 
 ## Terraform Resources
 
+Projects include a variety of Terraform resources such as:
+
 - `azurerm_postgresql_flexible_server`
 - `azurerm_virtual_network`
 - `azurerm_subnet`
-- `azurerm_postgresql_flexible_server_firewall_rule`
+- `azurerm_network_interface`
+- `azurerm_linux_virtual_machine`
+- `azurerm_load_balancer`
+- `azurerm_application_gateway`
 - `azurerm_resource_group`
 
 ---
@@ -29,11 +23,11 @@ This project simulates deploying a secure PostgreSQL Flexible Server in Azure us
 
 Below is the output from `terraform plan`:
 
-![Terraform Plan Output](screenshots/terraform-plan.png)
+![Terraform Plan Output](./screenshots/terraform-plan.png)
+
 ---
 
-<<<<<<< HEAD
-## 📁 Project Structure
+## Project Structure
 
 Each project folder includes:
 
@@ -41,42 +35,29 @@ Each project folder includes:
 - `variables.tf` – configurable inputs
 - `outputs.tf` – key results returned from resources
 - `provider.tf` – required providers and backend
-- `README.txt` – explanation of what each project does
+- `README.md` – explanation of what each project does
 - `screenshots/` – embedded Terraform plan results
 
 ---
 
-## 🗂 Projects
+## Projects
 
-- [Project 22 – PostgreSQL Basic](https://github.com/ASolis2/azure-terraform-projects/blob/project-22/README.md)  
-  Deploys a basic PostgreSQL Server in Azure (simulated plan)
-
-- [Project 23 – PostgreSQL Public Access](https://github.com/ASolis2/azure-terraform-projects/blob/project-23/README.md)  
-  Adds public network firewall rules to PostgreSQL (simulated plan)
-
-- [Project 24 – PostgreSQL Private Networking](https://github.com/ASolis2/azure-terraform-projects/blob/project-24/README.md)  
-  Deploys PostgreSQL server into a private subnet (no public IP)
-
-- [Project 25 – PostgreSQL Geo-Redundant Backup](https://github.com/ASolis2/azure-terraform-projects/blob/project-25/README.md)  
-  Simulates geo-redundant storage for backups (simulated only)
-
-- [Project 26 – PostgreSQL Advanced Security](https://github.com/ASolis2/azure-terraform-projects/blob/project-26/README.md)  
-  Private-only PostgreSQL server with VNet + firewall rule (simulated)
+- [Project 22 – PostgreSQL Basic](./project-22)
+- [Project 23 – PostgreSQL Public Access](./project-23)
+- [Project 24 – PostgreSQL Private Access](./project-24)
+- [Project 25 – PostgreSQL Geo-Redundant (Simulated)](./project-25)
+- [Project 26 – PostgreSQL Advanced Security](./project-26)
+- [Project 27 – Azure Load Balancer with Multiple VMs](./project-27-loadbalancer-multiple-vms)
 
 ---
 
-## 🎯 Goals
+## About These Projects
 
-- Demonstrate clean Terraform structure and branching
-- Simulate real-world Azure deployments locally for learning and practice
-- Build a strong DevOps/Cloud portfolio with public GitHub documentation
+These are simulated or low-cost infrastructure-as-code projects designed to demonstrate:
 
----
-
-## 🧠 Built With Learning & Job Readiness in Mind
-
-Each project is crafted for clarity, documentation, and to showcase infrastructure knowledge to future employers or recruiters.
-=======
-*Built and documented with job-readiness and secure deployment practices in mind.*
->>>>>>> project-26
+- Azure networking and compute deployment
+- Load balancing and high availability
+- PostgreSQL server configurations
+- Secure and scalable infrastructure practices
+- GitHub version control and documentation
 
