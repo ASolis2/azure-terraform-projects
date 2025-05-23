@@ -11,7 +11,7 @@
 
 Below is the output from `terraform plan`:
 
-![Terraform Plan Output](screenshots/terraform-plan.png)
+![Terraform Plan Output](./screenshots/terraform-plan.png)
 
 ---
 
