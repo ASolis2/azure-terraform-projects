@@ -1,69 +1,33 @@
-# Project 27 - Azure Load Balancer with Multiple VMs
+# Project 27 – Azure Load Balancer with Multiple VMs (Simulated)
 
-## Overview
+This branch demonstrates a simulated deployment of a public-facing Azure Load Balancer that distributes HTTP traffic to two backend Linux virtual machines (VMs). It includes virtual networking, public IP, health probes, load balancing rules, and a backend pool.
 
-This project demonstrates how to deploy a public-facing Azure Load Balancer that distributes traffic across two backend Linux virtual machines (VMs). It includes a virtual network, subnet, NSG, public IP, load balancer, backend pool, health probe, HTTP rule, availability set, and two VMs.
-
-All infrastructure is managed using Terraform.
+> **Note:** This is a **simulated** Terraform project. No actual Azure resources are created or billed.
 
 ---
 
-## What This Project Includes
+## Key Components
 
-- Resource Group
-- Virtual Network and Subnet
-- Network Security Group allowing HTTP
-- Public IP Address
-- Azure Standard Load Balancer
-  - Backend Address Pool
-  - Health Probe (HTTP)
-  - Load Balancing Rule (Port 80)
-- Availability Set (for high availability)
-- 2 Linux Virtual Machines in backend pool
-- NIC-to-pool association using:
-  `azurerm_network_interface_backend_address_pool_association`
+- Resource Group  
+- Virtual Network, Subnet  
+- Network Security Group (Allow HTTP)  
+- Azure Public IP (Static)  
+- Azure Load Balancer (Standard)  
+  - Backend Address Pool  
+  - HTTP Health Probe  
+  - Load Balancing Rule  
+- 2 Simulated Linux VMs (no actual VM resources created)
 
 ---
 
-## Purpose
+## Screenshot (Validation Only)
 
-This architecture is commonly used to:
-- Provide high availability and redundancy
-- Load balance HTTP traffic between VMs
-- Simulate production-like scenarios with multiple servers
+![Terraform Validate](./project-27-loadbalancer-multiple-vms/screenshots/terraform-validate.png)
 
 ---
 
-## Terraform Files
+## Notes
 
-- `main.tf`: Infrastructure definitions
-- `variables.tf`: Input variables
-- `outputs.tf`: Output values (e.g., public IP, VM private IPs)
-- `provider.tf`: Provider configuration
-- `.gitignore`: Prevents `.terraform/` and state files from being committed
-- `/screenshots/terraform-plan.png`: Screenshot of Terraform plan
-
----
-
-## Screenshot
-
-![Terraform Validate](./screenshots/terraform-validate.png)
-
----
-
-## Usage
-
-Initialize and validate your configuration (simulated):
-```bash
-terraform init
-terraform plan
-```
-
-Push your work to GitHub using a branch:
-```bash
-git checkout -b project-27-loadbalancer-multiple-vms
-git add .
-git commit -m "Project 27 - Load Balancer with Multiple VMs"
-git push --set-upstream origin project-27-loadbalancer-multiple-vms
-```
+- Terraform is run in `validate` mode to simulate deployment  
+- Credentials and cloud access are not required  
 
