@@ -1,13 +1,13 @@
 variable "location" {
-  default = "East US"
+  default = "eastus"
 }
 
 variable "resource_group_name" {
-  default = "pg-rg-advanced"
+  default = "rg-postgres-advsec"
 }
 
-variable "server_name" {
-  default = "pg-adv-secure"
+variable "postgresql_server_name" {
+  default = "pgadvsecserver"
 }
 
 variable "admin_username" {
@@ -15,11 +15,6 @@ variable "admin_username" {
 }
 
 variable "admin_password" {
-  default = "SuperSecure123!"
-}
-
-variable "allowed_ip" {
-  description = "Specific IP address allowed through the firewall"
-  default     = "203.0.113.5"
+  default = "P@ssword1234!"
 }
 

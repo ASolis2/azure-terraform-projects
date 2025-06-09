@@ -1,36 +1,22 @@
+# Project 26 – Azure PostgreSQL with Advanced Security (Simulated)
 
-# Project 26: Azure PostgreSQL with Advanced Security (Simulated)
+This Terraform project simulates deploying a PostgreSQL Flexible Server in Azure with advanced security configuration (simulated). It includes:
 
-This project simulates deploying a secure PostgreSQL Flexible Server in Azure using Terraform. It focuses on advanced security practices by restricting public access and using VNet integration.
+- Resource group creation
+- PostgreSQL Flexible Server
+- Simulated advanced security (log monitoring config)
 
----
+> ⚠️ This is a **simulation** project. No real charges will occur as the Azure Defender or actual logging resources are **not provisioned**.
 
-## Features
+## Files
 
-- 🚫 Public network access disabled
-- 🌐 Integrated with a private Virtual Network and Subnet
-- 🔥 Firewall rule allowing access from a single IP
-- 🧪 Fully simulated with `terraform plan` only
-- 📤 Outputs server name and network mode
-
----
-
-## Terraform Resources
-
-- `azurerm_postgresql_flexible_server`
-- `azurerm_virtual_network`
-- `azurerm_subnet`
-- `azurerm_postgresql_flexible_server_firewall_rule`
-- `azurerm_resource_group`
-
----
+- `main.tf`: Core resources
+- `variables.tf`: Input variables
+- `outputs.tf`: Output values
+- `provider.tf`: Azure provider
+- `.gitignore`: Ignore state and Terraform system files
 
 ## Screenshot
 
-Below is the output from `terraform plan`:
-
-![Terraform Plan Output](https://raw.githubusercontent.com/ASolis2/azure-terraform-projects/project-26/project-26/screenshots/terraform-plan.png)
----
-
-*Built and documented with job-readiness and secure deployment practices in mind.*
+![Terraform Plan](./screenshots/terraform-validate.png)
 
