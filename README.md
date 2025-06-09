@@ -1,41 +1,53 @@
-# Project 26 – Azure PostgreSQL with Advanced Security (Simulated)
+# Project 27 – Azure Load Balancer with Multiple VMs (Simulated)
 
-This project simulates deploying an Azure PostgreSQL Flexible Server using Terraform, with basic configuration and a placeholder for advanced security monitoring (commented out). This setup is designed to validate syntax and structure only — no actual Azure deployment occurs.
+This project demonstrates how to deploy a public-facing Azure Load Balancer that distributes traffic across two backend Linux virtual machines (VMs). It includes a virtual network, subnet, NSG, public IP, load balancer, backend pool, health probe, HTTP rule, and two simulated VMs.
+
+> ⚠️ This is a **simulated project**. No actual Azure resources are created or billed.
 
 ---
 
 ## What This Project Includes
 
-- Resource Group  
-- Azure PostgreSQL Flexible Server  
-  - Admin login & password setup  
-  - Storage & backup retention  
-  - Maintenance window  
-  - Disabled Active Directory authentication  
-- Tags for environment labeling  
-- (Simulated) Diagnostic Settings (commented out to avoid API validation)  
+- Resource Group
+- Virtual Network and Subnet
+- Network Security Group allowing HTTP
+- Public IP Address
+- Azure Standard Load Balancer
+  - Backend Address Pool
+  - Health Probe (HTTP)
+  - Load Balancing Rule (Port 80)
+- 2 Simulated Linux Virtual Machines
+- Availability Set (optional for redundancy)
+- NIC-to-pool association using `azurerm_network_interface_backend_address_pool_association`
 
 ---
 
 ## Purpose
 
-This project helps demonstrate infrastructure-as-code for a secure PostgreSQL deployment in Azure without incurring any cloud costs. It emphasizes valid Terraform structure and usage of real-world resource blocks in simulation mode.
+This architecture is commonly used to:
+
+- Provide high availability and redundancy
+- Distribute web traffic across multiple VMs
+- Enable horizontal scalability
 
 ---
 
 ## Screenshot
 
-Terraform validate output to confirm working syntax:
+Validation output to confirm working syntax:
 
-![Terraform Validate](./project-26/screenshots/terraform-validate.png)
+![Terraform Validate](./project-27-loadbalancer-multiple-vms/screenshots/terraform-validate.png)
 
 ---
 
 ## Notes
 
-> ⚠️ Azure authentication is not required for this project. The provider block uses only:
+> Azure authentication is not required. This project uses only:
 ```hcl
 provider "azurerm" {
   features {}
 }
+```
+
+> The goal is to simulate the architecture and validate Terraform syntax using `terraform validate` instead of `terraform plan`.
 
