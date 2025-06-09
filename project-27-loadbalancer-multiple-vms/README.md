@@ -36,7 +36,7 @@ This architecture is commonly used to:
 
 Validation output to confirm working syntax:
 
-![Terraform Validate](./screenshots/terraform-validate.png)
+![Terraform Validate](./project-27-loadbalancer-multiple-vms/screenshots/terraform-validate.png)
 
 ---
 
