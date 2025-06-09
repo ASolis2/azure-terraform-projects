@@ -47,7 +47,7 @@ This architecture is commonly used to:
 
 ## Screenshot
 
-![Terraform Plan](./screenshots/terraform-plan.png)
+![Terraform Validate](./project-27-loadbalancer-multiple-vms/screenshots/terraform-validate.png)
 
 ---
 
